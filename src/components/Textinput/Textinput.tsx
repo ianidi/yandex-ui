@@ -180,6 +180,7 @@ const TextinputPresenter: FC<ITextinputProps> = ({
             {addonBefore}
             {iconLeft && <Icon side="left" component={iconLeft} />}
             {iconRight && <Icon side="right" component={iconRight} />}
+            <span className="input__placeholder">Имя</span>
             <Control {...props} aria-invalid={state === 'error'} disabled={disabled} />
             <Box />
             {addonAfter}
